@@ -178,7 +178,7 @@ class Trie: #Remember: You can update the insert and search function according t
     			return False
     	return True
 class SegmentTree:
-    def _init_(self, array, func=max):
+    def __init__(self, array, func=max):
         self.n = len(array)
         self.size = 2**(int(log2(self.n-1))+1) if self.n != 1 else 1
         self.func = func
